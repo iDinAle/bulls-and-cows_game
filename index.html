@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bulls and Cows</title>
+  <link rel="shortcut icon" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <article class="game">
+      <h1 class="game__title">Bulls and Cows</h1>
+      <p class="game__rules">Discover the hidden code!<br>Click, or use arrow keys, to change your guess in each box.<br>Bulls = correct code, correct position.<br>Cows = correct code, wrong position.</p>
+      <div class="game__container">
+        <div class="block">
+          <div class="block__left">
+            <div class="block__code">?</div>
+            <div class="block__code">?</div>
+            <div class="block__code">?</div>
+            <div class="block__code">?</div>
+          </div>
+          <div class="block__right">
+            <div class="block__bulls">Bulls</div>
+            <div class="block__cows">Cows</div>
+          </div>
+        </div>
+
+        <div id="go-block" class="block">
+          <div class="block__left">
+            <div class="block__code block__code--go block__code--active">0</div>
+            <div class="block__code block__code--go">1</div>
+            <div class="block__code block__code--go">2</div>
+            <div class="block__code block__code--go">3</div>
+          </div>
+          <div class="block__right">
+            <input class="block__go-btn" type="button" value="Go">
+          </div>
+        </div>
+      </div>
+      <div class="game__buttons-container">
+        <input class="game__new-game-btn" type="button" value="New Game">
+        <input class="game__give-up-btn" type="button" value="Give Up">
+      </div>
+    </article>
+  </main>
+
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
