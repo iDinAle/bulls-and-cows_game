@@ -149,6 +149,9 @@ const handleGoClick = (click) => {
   }
 
   if (isDuplicates) {
+    if (goButton.nextElementSibling === duplicates) {
+      return;
+    }
     duplicates = document.createElement('p');
     duplicates.className = 'block__duplicates';
     duplicates.innerText = 'Duplicates';
